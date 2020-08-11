@@ -1,0 +1,22 @@
+@use 'src/styles/vars';
+
+.error{
+    min-height: 400px;
+    overflow: hidden;
+    &__text {
+      font-family: vars.$title-font;
+    font-weight: vars.$title-font-weight;
+    text-align: center;
+    animation: rotatingColors 5s ease-in-out forwards;
+    }
+}
+@keyframes rotatingColors {
+  from {color: black;
+        font-size: 0.2em;}
+  to {
+    color: vars.$primary-color;
+    transform: rotateZ(-3240deg);
+    font-size: 15em;
+
+  }
+}

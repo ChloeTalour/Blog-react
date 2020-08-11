@@ -1,0 +1,17 @@
+@use 'src/styles/_vars.scss';
+
+.header {
+  border-bottom: 1px solid vars.$alt-color;
+  &__list {
+    display: flex;
+    justify-content: center;
+    &--item {
+      padding: vars.$gutter ;
+      font-family: vars.$global-font;
+      color: vars.$post-text-color;
+      &:hover {
+        color: vars.$title-color;
+      }
+    }
+  }
+}

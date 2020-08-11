@@ -1,0 +1,28 @@
+@use 'src/styles/vars';
+
+.single {
+  width: 90%;
+  max-width: 800px;
+  margin: vars.$gutter * 1.5 auto;
+  &__title {
+    font-family: vars.$title-font;
+    font-weight: vars.$title-font-weight;
+    color: vars.$primary-color;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: vars.$gutter * 1.5;
+    text-transform: uppercase;
+  }
+  &__category {
+    background-color: vars.$primary-color;
+    text-transform: uppercase;
+    color: vars.$light-color;
+    display: inline-block;
+    padding: vars.$gutter / 5 vars.$gutter / 3.5;
+    font-size: .8em;
+    margin-bottom: vars.$gutter / 2.5;
+  }
+  &__content {
+    color: vars.$post-text-color;
+  }
+}

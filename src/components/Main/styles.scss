@@ -1,0 +1,65 @@
+@use 'src/styles/_vars.scss';
+
+.main {
+  margin-bottom: vars.$gutter;
+  &__title {
+    text-align: center;
+    font-family: vars.$title-font;
+    text-transform: uppercase;
+    color: vars.$primary-color;
+    font-size: vars.$gutter;
+    font-weight: vars.$global-font-weight;
+    margin-top: vars.$gutter;
+  }
+
+  &__section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: vars.$global-font;
+  }
+}
+
+.article {
+  margin-top: vars.$gutter;
+  width: 40%;
+  box-sizing: border-box;
+  padding: vars.$gutter/2;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  &__title {
+    font-family: vars.$title-font;
+    font-weight: vars.$title-font-weight;
+    font-size: vars.$gutter/1.5;
+    margin-bottom: 0.5em;
+  }
+  &__category {
+    background-color: vars.$primary-color;
+    display: inline-block;
+    padding: 0.2em 0.5em;
+    color: vars.$light-color;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+    font-size: 0.9em;
+  }
+
+  &__excerpt {
+    color: vars.$post-text-color;
+    em {
+      font-style: italic;
+    }
+    
+    strong {
+      font-weight: bold;
+    }
+  }
+  &:hover {
+    background-color: vars.$post-hover-color;
+  }
+}
+
+.header__link--active {
+  color: vars.$primary-color;
+}
+

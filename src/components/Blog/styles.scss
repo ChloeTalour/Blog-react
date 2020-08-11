@@ -1,0 +1,5 @@
+@use 'src/styles/_vars.scss';
+
+.blog {
+  margin: vars.$gutter/2 vars.$gutter;
+}
